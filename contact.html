@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Rana Alotaibi</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Rana Alotaibi</a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="content">
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch, please fillout the form below:</p>
+
+        <form id="contact-form" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="button" value="Clear" onclick="clearForm()">
+        </form>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>
+                    <strong>Email:</strong> rana-dajaani@hotmail.com
+                </li>
+                <li>
+                    <strong>Phone:</strong> 050 106 9242
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="footer-container">
+        <footer class="footer">
+            <p class="footer-title">Copyright © <span>Rana Alotaibi</span></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rana-alotaibi-281689263"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:Rana-dajaani@hotmail.com"><i class="far fa-envelope"></i></a>
+                <a href="tel:+966501069242"><i class="fas fa-phone-volume"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+  
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+        }
+
+        var form = document.getElementById("contact-form");
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); 
+            alert("Form submitted!");
+        });
+    </script>
+</body>
+</html>

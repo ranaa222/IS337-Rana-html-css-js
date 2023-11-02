@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me - Rana Alotaibi</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Rana Alotaibi</a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="content">
+        <h2>About Me</h2>
+        <p>My name is Rana Alotaibi, and I am from Saudi Arabia. I was born and raised in Riyadh, specifically on May 8, 2001. I'm thrilled by the prospects that Management Information Systems (MIS) presents for the future in Saudi Arabia. I'm passionate about having a positive influence and helping companies grow and succeed by effectively managing information and making data-driven decisions. Currently, I'm actively seeking new opportunities to further develop my skills and contribute to the technology industry. I'm particularly interested in roles that allow me to leverage my expertise in data analysis, database management, and business intelligence.</p>
+        <button id="toggle-bio">Toggle Bio</button>
+        <div id="hidden-bio" style="display: none;">
+            <p>In addition to my professional interests, I have a strong passion for technology and gaming. I enjoy live broadcasting on platforms like Twitch and connecting with the global gaming community, which allows me to relax and unwind from my professional pursuits.</p>
+        </div>
+    </section>
+    <script>
+        const toggleBioButton = document.getElementById("toggle-bio");
+        const hiddenBio = document.getElementById("hidden-bio");
+
+        toggleBioButton.addEventListener("click", function () {
+            if (hiddenBio.style.display === "none" || hiddenBio.style.display === "") {
+                hiddenBio.style.display = "block";
+            } else {
+                hiddenBio.style.display = "none";
+            }
+        });
+    </script>
+    <footer class="footer">
+        <p class="footer-title">Copyright © <span>Rana Alotaibi</span></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/rana-alotaibi-281689263"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:Rana-dajaani@hotmail.com"><i class="far fa-envelope"></i></a>
+            <a href="tel:+966501069242"><i class="fas fa-phone-volume"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

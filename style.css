@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #ff66b2;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 3vw;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: transform 0.5s;
+}
+
+.logo img {
+    width: 10vw;
+    height: 10vw;
+    margin-right: 1vw;
+    transition: transform 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.logo:hover img {
+    transform: scale(1.2);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 1vh 2vw;
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+}
+
+.navigation a:hover {
+    background-color: rgb(255, 0, 234);
+    color: #fff;
+}
+
+.content {
+    max-width: 80vw;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.game-list li img {
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+    transition: transform 0.5s;
+}
+
+.game-list li:hover {
+    transform: scale(1.1);
+}
+
+.game-list li:hover img {
+    transform: scale(1.2);
+}
+
+.blog-post {
+    text-align: center;
+}
+
+.blog-post img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #ff66b2;
+}
+
+ul.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.skills-list li::before {
+    content: "\2022";
+    color: #ff66b2;
+    margin-right: 1vw;
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 2vw;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 2vw;
+    background-color: #ff66b2;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.6vw;
+    font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.download-button:hover {
+    background-color: #ff99cc;
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #ff66b2;
+    padding: 2vh;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.8vw;
+    margin: 1vh 0;
+}
+
+.social-icons {
+    margin: 1vh 0;
+}
+
+.social-icons a {
+    font-size: 2.4vw;
+    margin: 0 1vw;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff00ff;
+}
+
+.large-white-box {
+    text-align: center;
+}
+
+.large-white-box h1 {
+    font-weight: bold;
+}
+.contact-form{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding: 2vw 4vw;
+ background-color: #fff;
+ width: 80%;
+max-width: 600px;
+margin-bottom: 10px;
+        border-radius: 10px;}
+
+      .input, textarea {
+        margin-bottom: 5px;
+      }
+ 
